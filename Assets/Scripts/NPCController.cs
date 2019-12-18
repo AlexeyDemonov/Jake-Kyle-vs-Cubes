@@ -90,11 +90,18 @@ public class NPCController : MonoBehaviour
         if (_agent.isStopped)
             _agent.isStopped = false;
 
-        _agent.SetDestination(_currentTarget.transform.position);
+        Vector3 targetPosition = _currentTarget.transform.position;
+        _agent.SetDestination(targetPosition);
 
         while (TargetValid && !TargetVisible)
         {
             yield return _actionWait;
+
+            if(_currentTarget.transform.position != targetPosition)
+            {
+                targetPosition = _currentTarget.transform.position;
+                _agent.SetDestination(targetPosition);
+            }
         }
 
         _agent.velocity = Vector3.zero;
