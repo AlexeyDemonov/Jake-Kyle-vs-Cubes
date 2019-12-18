@@ -259,3 +259,12 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/Assets/Animations
+/Assets/Images
+/Assets/Kevin Iglesias/Basic Motions Pack
+/Assets/Prefabs
+/Assets/Robot Kyle
+/Assets/Scenes
+/Library
+/ProjectSettings
+/Temp
