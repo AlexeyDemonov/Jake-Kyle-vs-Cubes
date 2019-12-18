@@ -49,9 +49,9 @@ public class NPCController : MonoBehaviour
 
             if (Physics.Raycast(Seeker.transform.position, Seeker.transform.forward, out RaycastHit hitInfo))
             {
-                CubeController hittedCube = hitInfo.collider.gameObject.GetComponent(typeof(CubeController)) as CubeController;
+                AbstractTarget hittedTarget = hitInfo.collider.gameObject.GetComponent(typeof(AbstractTarget)) as AbstractTarget;
 
-                result = hittedCube != null && hittedCube == _currentTarget;
+                result = hittedTarget != null && hittedTarget == _currentTarget;
             }
             else
             {

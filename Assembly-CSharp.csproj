@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\CameraRigController.cs" />
     <Compile Include="Assets\Scripts\CameraRotator.cs" />
     <Compile Include="Assets\Scripts\CubeController.cs" />
+    <Compile Include="Assets\Scripts\GameQuitter.cs" />
     <Compile Include="Assets\Scripts\IKAnimationController.cs" />
     <Compile Include="Assets\Scripts\LazerController.cs" />
     <Compile Include="Assets\Scripts\NavMeshAgentToAnimationConverter.cs" />
